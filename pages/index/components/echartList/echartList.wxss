@@ -1,0 +1,53 @@
+/* pages/index/components/echartList/echartList.wxss */
+.item-container {
+  height: 372rpx;
+  background: #3a3a3a;
+  margin: 25rpx;
+}
+.ec-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx 28rpx 20rpx 28rpx;
+  border-bottom: 1rpx solid #333;
+}
+
+.header-text {
+  font-size: 24rpx;
+  line-height: 48rpx;
+}
+.right-text {
+  opacity: 0.6;
+}
+.bower-text {
+  color: #7EFF00;
+}
+.transmit-text {
+  color: #00FFCC;
+}
+.like-text {
+  color: #DE4040;
+}
+.comment-text {
+  color: #FFB400;
+}
+.collect-text{
+  color: #FF00FF;
+}
+.banner-text {
+  color: #fff;
+}
+.ec-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 280rpx;
+  width: 700rpx;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,73 @@
+<!--index.wxml-->
+<view class="meToo">
+  <view class="userinfo">
+    <van-row>
+      <van-col span="8">
+      <van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png"  class="userinfo-avatar"/>
+        <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="../../images/boy.jpg" mode="cover"></image> -->
+      </van-col>
+      <van-col span="8">
+        <view class="usermotto">
+          <text class="userinfo-nickname">小仙女儿</text>
+          <view class="usertag">
+            <van-tag color="#aaaaa" text-color="#fffff" size="large " class="usertag1">打卡</van-tag>
+            <van-tag type="primary" size="large">消息</van-tag>
+          </view>
+        </view>
+      </van-col>
+      <van-col span="8">
+        <view class="usergrade">
+          <view class="usertag">
+            <van-tag color="#aaaaa" text-color="#fffff" size="large " class="usertag1">青铜</van-tag>
+          </view>
+          <text class="userinfo-nickname">小学生</text>
+          <view class="userinfo-ok">
+            <text>1888<van-icon name="good-job-o" /></text>
+            <van-icon name="good-job-o" class="userinfo-ico" />
+          </view>
+
+        </view>
+      </van-col>
+    </van-row>
+  </view>
+
+  <van-tabs active="{{ activeIndex}}" bind:change="onChange" color="#fffff">
+    <van-tab title="时间管理 ">时间管理
+      <!-- <view class="box" style="width: 100%;height: 400px;">
+        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+      </view> -->
+    </van-tab>
+    <van-tab title="成绩管理 ">
+      <view class="box" style="width: 100%;height:400px;">
+        <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec1 }}"></ec-canvas>
+      </view>
+      <view class="box" style="width: 100%;height: 400px;">
+        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec2 }}"></ec-canvas>
+      </view>
+      <view class="box" style="width: 100%;height: 400px;">
+        <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec3 }}"></ec-canvas>
+      </view>
+      <van-divider />
+      <view class="box" style="width: 100%;height: 300px; padding-top: 20px;">
+        <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec4 }}"></ec-canvas>
+      </view>
+      <view>
+        <van-cell-group>
+          <van-cell title="我的收藏" icon="star-o" is-link/>
+          <van-cell title="咨询答疑" icon="comment-circle-o" is-link/>
+          <van-cell title="我的收藏" icon="star-o" is-link/>
+        </van-cell-group>
+      </view>
+    </van-tab>
+    <van-tab title="错题管理 ">错题管理</van-tab>
+  </van-tabs>
+  <!-- <view class="box"  >
+        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+      </view> -->
+
+  <van-tabbar active="{{ active }}" bind:change="onChange" z-index='9999'>
+    <van-tabbar-item name="home" icon="home-o">首页</van-tabbar-item>
+    <van-tabbar-item name="search" icon="search">发现</van-tabbar-item>
+    <van-tabbar-item name="friends" icon="friends-o">我的</van-tabbar-item>
+  </van-tabbar>
+</view>
